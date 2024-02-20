@@ -41,6 +41,10 @@ function Tabbed({ content }) {
       {activeTab <= 2 ? (
         <TabContent item={content.at(activeTab)} />
       ) : (
+        //         So this at here is basically modern JavaScript
+        // which is the same as this here,
+        // so basically reading something out of an array,
+        // <TabContent item={content[activeTab]} />
         <DifferentContent />
       )}
     </div>
